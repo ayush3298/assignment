@@ -15,6 +15,8 @@ class APIComparator:
             
     def compare_and_print(self, url1, url2):
         try:
+            global response1
+            global response2
             response1 = self.send_request(url1)
             response2 = self.send_request(url2)
             
@@ -33,5 +35,8 @@ class APIComparator:
                 url1 = line1.strip()
                 url2 = line2.strip()
                 self.compare_and_print(url1, url2)
+
+    def are_responses_equal(self):
+        return not response1 != response2
         
 
