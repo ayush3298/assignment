@@ -26,5 +26,12 @@ class APIComparator:
         except Exception as e:
             print(f"Error comparing {url1} and {url2}: {str(e)}")
             
+
+    def compare_responses(self):
+        with open(self.file1, 'r') as f1, open(self.file2, 'r') as f2:
+            for line1, line2 in zip(f1, f2):
+                url1 = line1.strip()
+                url2 = line2.strip()
+                self.compare_and_print(url1, url2)
         
 
