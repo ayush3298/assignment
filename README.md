@@ -11,7 +11,19 @@ The API Comparison Utility allows you to compare two sets of API responses (HTTP
 
 1. Make sure you have Python installed on your system.
 
-2. Install the required Python libraries by running:
+2. Clone the repository first, so that you have all the scripts and supporting files into your local codebase.
+
+3. Create and activate virtual environment
+
+##### Linux
+- python3 -m venv {venv_name}
+- source {venv_name}/bin/activate
+
+##### Windows
+- python venv {venv_name}
+- {venv_name}/Scripts/activate
+
+4. Install the required Python libraries by running:
 
 
    ```bash
