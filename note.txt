@@ -1,0 +1,17 @@
+# Approach
+
+1. As per the requirement, I have to create a python program which acts like a library for API's response comparison whicha are comes from two different text files.
+
+2. I created a python class "APIComparator" which takes two arguments file1 and file2.
+
+3. Then I have created a method which is take a url and returns the response of that url.
+
+4. Then I have created another method which takes two url and uses the send_request method to hit those url and print the responses of different urls according to define format.
+
+5. I make response1 and response2 variable as global variable, so that I can use those anywhere in this script.
+
+6. Then I have created another method compare_response, which uses the class variable and access all the urls present in both files.
+
+7. Then it uses the compare_and_print method to log the comparison between different API's.
+
+8. are_responses_equal is kind of helper method which checks the response1 and response2 of API and return the boolean response.
